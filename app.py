@@ -1,4 +1,4 @@
-from database import add_entry, get_entries
+from database import add_entry, get_entries, create_table
 
 menu = """
 Please select one of the follwowing options:
@@ -21,7 +21,7 @@ def view_entry(entries_list):
         print(f"Content: {entry['content']}")
         print("-" * 20)
 
-
+create_table()
 user_input = input(menu)
 
 while user_input != "3":
